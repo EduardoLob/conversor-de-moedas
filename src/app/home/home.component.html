@@ -7,6 +7,8 @@
       <option *ngFor="let item of lista" [value]="item.high">{{item.name}}</option>
     </select>
 
+    <input [(ngModel)]="valor" type="text" class="inserir" placeholder="Insira o valor a ser convertido">
+
     <button (click)="fazerConversao()" class="btn-primary btn-convert">Converta</button>
 
     <div class="resultado">

@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   public resultadoConvercao = "00"
   public moeda1: any;
   public moeda2: any;
+  public valor: any;
   public lista = new Array();
 
   constructor(public api: ApiService) { }
@@ -37,8 +38,8 @@ export class HomeComponent implements OnInit {
   }
 
   fazerConversao() {
-    let conta = this.moeda1;
-    this.resultadoConvercao = conta.toString();
+    let conta = this.moeda1 * this.valor;
+    this.resultadoConvercao = conta.toFixed(2);
     console.log(this.resultadoConvercao);
   }
 

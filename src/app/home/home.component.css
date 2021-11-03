@@ -4,6 +4,13 @@
     text-align: center !important;
     width: 300px;
   }
+
+.inserir{
+    justify-content: center!important;
+    text-align: center !important;
+    width: 300px;
+    margin: 20px;
+}
   
 .center{
     justify-content: center!important;
@@ -29,9 +36,8 @@
 }
 
 button{
-    background-image: url(https://www.jornaldocomercio.com/_midias/jpg/2020/10/26/dinheiro-9174324.jpg);
-    padding: 20px;
-    width: 150px !important;
+    padding: 15px;
+    border-radius: 30px;
 }
 
 .row{
