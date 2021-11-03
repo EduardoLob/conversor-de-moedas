@@ -1,0 +1,19 @@
+<div class="bg">
+
+  <div class="row text-center prin center">
+
+    <select [(ngModel)]="moeda1" class="form-select" aria-label="Default select example">
+      <option disabled="true">Selecione a moeda atual</option>
+      <option *ngFor="let item of lista" [value]="item.high">{{item.name}}</option>
+    </select>
+
+    <button (click)="fazerConversao()" class="btn-primary btn-convert">Converta</button>
+
+    <div class="resultado">
+      <b>Resultado:</b>
+
+      <p>R$:{{resultadoConvercao}}</p>
+
+    </div>
+  </div>
+</div>

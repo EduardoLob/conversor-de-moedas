@@ -1,0 +1,47 @@
+.form-select{
+    display: flex;
+    justify-content: center!important;
+    text-align: center !important;
+    width: 300px;
+  }
+  
+.center{
+    justify-content: center!important;
+    text-align: center !important;
+    align-items: center;
+  
+}
+  
+.btn-convert{
+    width: 30%;
+}
+
+.bg{
+    background-image: url(https://media-manager.noticiasaominuto.com.br/1920/naom_5bc789ce2c33c.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.resultado{
+    color: white;
+}
+
+button{
+    background-image: url(https://www.jornaldocomercio.com/_midias/jpg/2020/10/26/dinheiro-9174324.jpg);
+    padding: 20px;
+    width: 150px !important;
+}
+
+.row{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    color: white;
+}
