@@ -1,4 +1,6 @@
-<div class="text-center form-login">
+<body>
+  
+  <div class="login  text-center form-login">
     <div class="mb-3 row">
       <label for="Email" class="col-sm-2 col-form-label">Email</label>
       <div class="col-sm-10">
@@ -11,5 +13,12 @@
         <input  [(ngModel)]="senha" name="" type="password" required="true" class="form-control" id="inputPassword">
       </div>
     </div>
-    <button  (click)="fazerLogin()" class="btn bg-primary text-white"  > Acessar</button>
+    <button  id="btn1" (click)="fazerLogin()" class="btn bg-primary text-white"  > Acessar</button>
+    <button (click)="liberarCadastro()" class="btn bg-primary text-white">Cadastratar</button>
   </div>
+
+  <div class="col-6">
+    <app-cadastro *ngIf="mostrarCadastro" ></app-cadastro>
+  </div>
+ 
+  <!-- routerLink="/home" -->

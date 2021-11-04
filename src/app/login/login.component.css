@@ -1,10 +1,19 @@
-.form-control{
+.login{
+  margin: auto;
+  padding-top: 80px;
+  margin-left: 25%;
+}
 
-    width: 30%;
-  }
-  
-.form-login{
-  
-   justify-content: center;
-  
-  }
+.login input{
+  width: 500px;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+}
+
+#btn1{
+  margin-left: -30% !important;
+  margin: 10px;
+}

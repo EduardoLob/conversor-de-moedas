@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControlName, FormGroupName, FormsModule } from '@angular/forms';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -7,19 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  public email:any;
-  public senha:any;
+public email:any;
+public senha:any;
+public mostrarCadastro = false;
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+constructor(public authService: AuthService) { }
 
-  fazerLogin(){
+ngOnInit(): void {
 
-    console.log("meu login")
-    console.log(this.email, "email login")
-    console.log(this.senha, "senha login") 
-  }
+}
 
+liberarCadastro(){
+  this.mostrarCadastro = !this.mostrarCadastro
+}
+
+
+fazerLogin(){
+this.authService.loginWithEmail(this.email, this.senha)
+console.log("meu login")
+console.log(this.email , "login")
+console.log(this.senha , "senha")
+}
 }
