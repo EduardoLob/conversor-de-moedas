@@ -26,3 +26,11 @@ legend {
     border-radius: 9px;
     color: black;
 }
+
+.btn{
+    width: 50%;
+    margin-left: 100px;
+    background-image: linear-gradient(to bottom, white, black) !important;
+    border: 0px;
+    border-radius: 20px;
+}

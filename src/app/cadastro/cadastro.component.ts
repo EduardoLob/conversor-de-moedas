@@ -23,7 +23,7 @@ export class CadastroComponent implements OnInit {
   }
 
 
-  cadastratar() {
+  cadastrar() {
 
     console.log(this.formCadastro, "meu formulario")
   }

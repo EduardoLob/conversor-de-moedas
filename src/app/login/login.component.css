@@ -1,19 +1,29 @@
 .login{
   margin: auto;
   padding-top: 80px;
-  margin-left: 25%;
+  margin-left: 37,5%;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 15px;
+  width: 25%;
+  color: white;
 }
 
 .login input{
-  width: 500px;
-}
-
-body{
-  height: 100%;
   width: 100%;
 }
 
-#btn1{
-  margin-left: -30% !important;
+body{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, white, black);
+}
+
+.btn{
+  border: 0px;
   margin: 10px;
+  width: 45%;
+  background-image: linear-gradient(to bottom, white, black);
 }
